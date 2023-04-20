@@ -1,0 +1,7 @@
+name: orimi
+
+profile: demo
+
+model-paths: ['models']
+view-paths: ['views']
+dashboard-paths: ['dashboards']
