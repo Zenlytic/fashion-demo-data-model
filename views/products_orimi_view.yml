@@ -2,7 +2,7 @@ version: 1
 type: view
 name: products
 model_name: orimi_model
-sql_table_name: DEMO_DBT_PBLANKLEY.PRODUCTS_ORIMI
+sql_table_name: DEMO_PROD.PRODUCTS_ORIMI
 row_label: Product
 
 identifiers:

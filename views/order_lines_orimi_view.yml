@@ -2,7 +2,7 @@ version: 1
 type: view
 name: order_lines
 model_name: orimi_model
-sql_table_name: DEMO_DBT_PBLANKLEY.ORDER_LINES_ORIMI
+sql_table_name: DEMO_PROD.ORDER_LINES_ORIMI
 default_date: order
 row_label: Order line
 event_name: Purchase

@@ -2,7 +2,7 @@ version: 1
 type: view
 name: marketing_spend
 model_name: orimi_model
-sql_table_name: DEMO_DBT_PBLANKLEY.MARKETING_SPEND_ORIMI
+sql_table_name: DEMO_PROD.MARKETING_SPEND_ORIMI
 default_date: spend
 row_label: Spend Item
 

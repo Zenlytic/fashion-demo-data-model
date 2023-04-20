@@ -2,7 +2,7 @@ version: 1
 type: view
 name: events
 model_name: orimi_model
-sql_table_name: DEMO_DBT_PBLANKLEY.EVENTS_ORIMI
+sql_table_name: DEMO_PROD.EVENTS_ORIMI
 default_date: event
 row_label: Event
 event_dimension: event_name

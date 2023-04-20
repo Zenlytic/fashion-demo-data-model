@@ -2,7 +2,7 @@ version: 1
 type: view
 name: customers
 model_name: orimi_model
-sql_table_name: DEMO_DBT_PBLANKLEY.CUSTOMERS_ORIMI
+sql_table_name: DEMO_PROD.CUSTOMERS_ORIMI
 row_label: Customer
 default_date: first_order
 
