@@ -68,13 +68,14 @@ fields:
 - name: is_return
   field_type: dimension
   type: yesno
-  sql: ${TABLE}.is_return
+  sql: ${TABLE}.is_returned
   hidden: yes
 
 - name: returned_for_fit
   field_type: dimension
   type: yesno
   sql: ${TABLE}.returned_for_fit
+  hidden: yes
 
 - name: ar_vr_viewed
   label: AR/VR Viewed
@@ -150,7 +151,8 @@ fields:
   drill_up: marketing_channel
   drill_down: campaign
 
-- name: custom_marketing_channel
+- name: marketing_channel
+  label: Custom Marketing Channel
   field_type: dimension
   type: string
   sql: ${TABLE}.MARKETING_CHANNEL
@@ -268,11 +270,28 @@ fields:
     - field: is_return
       value: yes
 
+- name: number_of_returns_fit_only
+  field_type: measure
+  type: count_distinct
+  sql: ${order_id}
+  description: "The unique number of orders returned for fit"
+  value_format_name: decimal_0
+  filters:
+    - field: returned_for_fit
+      value: yes
+
 - name: return_rate
   field_type: measure
   type: number
   sql: ${number_of_returns} / nullif(${number_of_orders}, 0)
   description: "The unique number of orders returned / the unique number of orders"
+  value_format_name: percent_1
+
+- name: percent_returns_for_fit
+  field_type: measure
+  type: number
+  sql: ${number_of_returns_fit_only} / nullif(${number_of_returns}, 0)
+  description: "The unique number of orders returned for fit only / the unique number of orders returned"
   value_format_name: percent_1
 
 - name: number_of_repeat_orders

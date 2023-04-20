@@ -75,4 +75,5 @@ fields:
   type: number
   sql: ${order_lines.total_net_revenue} / nullif(${total_marketing_spend}, 0)
   description: Return on advertising spend = Total advertising revenue / Total marketing spend across all channels
-  value_format_name: usd
+  value_format_name: decimal_1
+  
