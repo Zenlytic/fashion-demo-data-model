@@ -94,6 +94,7 @@ fields:
   sql: case when ${TABLE}.live_chat_used then 'Live chat used' else 'Live chat not used' end
 
 - name: style_guide_viewed
+  label: Fit Guide Viewed
   field_type: dimension
   type: string
   sql: case when ${TABLE}.style_guide_viewed then 'Style guide viewed' else 'Style Guide not viewed' end
