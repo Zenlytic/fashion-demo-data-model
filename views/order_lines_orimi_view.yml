@@ -97,7 +97,7 @@ fields:
   label: Fit Guide Viewed
   field_type: dimension
   type: string
-  sql: case when ${TABLE}.style_guide_viewed then 'Style guide viewed' else 'Style Guide not viewed' end
+  sql: case when ${TABLE}.style_guide_viewed then 'Fit guide viewed' else 'Fit Guide not viewed' end
 
 - name: last_click_marketing_channel
   field_type: dimension
