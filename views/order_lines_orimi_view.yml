@@ -77,6 +77,11 @@ fields:
   sql: ${TABLE}.returned_for_fit
   hidden: yes
 
+- name: return_reason
+  field_type: dimension
+  type: string
+  sql: ${TABLE}.return_reason
+  
 - name: ar_vr_viewed
   label: AR/VR Viewed
   field_type: dimension
