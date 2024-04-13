@@ -9,76 +9,76 @@ fields:
   - name: facility_id
     field_type: dimension
     type: string
-    sql: ${TABLE}.Facility ID
+    sql: ${TABLE}."Facility ID"
   - name: measure_id
     field_type: dimension
     type: string
-    sql: ${TABLE}.Measure ID
+    sql: ${TABLE}."Measure ID"
   - name: facility_name
     field_type: dimension
     type: string
-    sql: ${TABLE}.Facility Name
+    sql: ${TABLE}."Facility Name"
   - name: address
     field_type: dimension
     type: string
-    sql: ${TABLE}.Address
+    sql: ${TABLE}."Address"
   - name: citytown
     field_type: dimension
     type: string
-    sql: ${TABLE}.City/Town
+    sql: ${TABLE}."City/Town"
   - name: state
     field_type: dimension
     type: string
-    sql: ${TABLE}.State
+    sql: ${TABLE}."State"
     searchable: true
   - name: zip_code
     field_type: dimension
     type: string
-    sql: ${TABLE}.ZIP Code
+    sql: ${TABLE}."ZIP Code"
   - name: countyparish
     field_type: dimension
     type: string
-    sql: ${TABLE}.County/Parish
+    sql: ${TABLE}."County/Parish"
   - name: telephone_number
     field_type: dimension
     type: string
-    sql: ${TABLE}.Telephone Number
+    sql: ${TABLE}."Telephone Number"
   - name: measure_name
     field_type: dimension
     type: string
-    sql: ${TABLE}.Measure Name
+    sql: ${TABLE}."Measure Name"
   - name: compared_to_national
     field_type: dimension
     type: string
-    sql: ${TABLE}.Compared to National
+    sql: ${TABLE}."Compared to National"
   - name: denominator
     field_type: dimension
     type: string
-    sql: ${TABLE}.Denominator
+    sql: ${TABLE}."Denominator"
   - name: score
     field_type: dimension
     type: string
-    sql: ${TABLE}.Score
+    sql: ${TABLE}."Score"
   - name: lower_estimate
     field_type: dimension
     type: string
-    sql: ${TABLE}.Lower Estimate
+    sql: ${TABLE}."Lower Estimate"
   - name: higher_estimate
     field_type: dimension
     type: string
-    sql: ${TABLE}.Higher Estimate
+    sql: ${TABLE}."Higher Estimate"
   - name: number_of_patients
     field_type: measure
     type: sum
-    sql: ${TABLE}.Number of Patients
+    sql: ${TABLE}."Number of Patients"
   - name: number_of_patients_returned
     field_type: measure
     type: sum
-    sql: ${TABLE}.Number of Patients Returned
+    sql: ${TABLE}."Number of Patients Returned"
   - name: footnote
     field_type: dimension
     type: string
-    sql: ${TABLE}.Footnote
+    sql: ${TABLE}."Footnote"
     searchable: true
   - name: start_date
     field_type: dimension_group
@@ -93,7 +93,7 @@ fields:
       - quarter
       - year
     type: time
-    sql: ${TABLE}.Start Date
+    sql: ${TABLE}."Start Date"
 
   - name: end_date
     field_type: dimension_group
@@ -108,4 +108,4 @@ fields:
       - quarter
       - year
     type: time
-    sql: ${TABLE}.End Date
+    sql: ${TABLE}."End Date"
