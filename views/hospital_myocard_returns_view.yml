@@ -1,0 +1,88 @@
+version: 1
+type: view
+name: hospital_myocard_returns
+model_name: orimi_model
+sql_table_name: main.hospital_myocard_returns
+fields:
+  - name: facility_id
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Facility ID
+  - name: measure_id
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Measure ID
+  - name: facility_name
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Facility Name
+  - name: address
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Address
+  - name: citytown
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.City/Town
+  - name: state
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.State
+    searchable: true
+  - name: zip_code
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.ZIP Code
+  - name: countyparish
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.County/Parish
+  - name: telephone_number
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Telephone Number
+  - name: measure_name
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Measure Name
+  - name: compared_to_national
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Compared to National
+  - name: denominator
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Denominator
+  - name: score
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Score
+  - name: lower_estimate
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Lower Estimate
+  - name: higher_estimate
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Higher Estimate
+  - name: number_of_patients
+    field_type: measure
+    type: sum
+    sql: ${TABLE}.Number of Patients
+  - name: number_of_patients_returned
+    field_type: measure
+    type: sum
+    sql: ${TABLE}.Number of Patients Returned
+  - name: footnote
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Footnote
+    searchable: true
+  - name: start_date
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.Start Date
+  - name: end_date
+    field_type: dimension
+    type: string
+    sql: ${TABLE}.End Date
