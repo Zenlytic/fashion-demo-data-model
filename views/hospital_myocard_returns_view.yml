@@ -1,8 +1,10 @@
 version: 1
 type: view
 name: hospital_myocard_returns
-model_name: orimi_model
+model_name: astro_model
 sql_table_name: main.hospital_myocard_returns
+default_date: start_date
+
 fields:
   - name: facility_id
     field_type: dimension
@@ -79,10 +81,31 @@ fields:
     sql: ${TABLE}.Footnote
     searchable: true
   - name: start_date
-    field_type: dimension
-    type: string
+    field_type: dimension_group
+    timeframes:
+      - raw
+      - date
+      - week
+      - month
+      - day_of_year
+      - week_of_year
+      - month_of_year
+      - quarter
+      - year
+    type: time
     sql: ${TABLE}.Start Date
+
   - name: end_date
-    field_type: dimension
-    type: string
+    field_type: dimension_group
+    timeframes:
+      - raw
+      - date
+      - week
+      - month
+      - day_of_year
+      - week_of_year
+      - month_of_year
+      - quarter
+      - year
+    type: time
     sql: ${TABLE}.End Date
