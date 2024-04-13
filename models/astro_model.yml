@@ -2,7 +2,7 @@ version: 1
 type: model
 name: astro_model
 connection: demo
-
+ 
 access_grants:
   - name: pii_access
     user_attribute: department
