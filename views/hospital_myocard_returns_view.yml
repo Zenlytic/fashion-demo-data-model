@@ -70,7 +70,7 @@ fields:
   - name: number_of_patients
     field_type: measure
     type: sum
-    sql: ${TABLE}."Number of Patients"
+    sql: cast(${TABLE}."Number of Patients" as double)
   - name: number_of_patients_returned
     field_type: measure
     type: sum
