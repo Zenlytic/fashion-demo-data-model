@@ -1,7 +1,7 @@
 version: 1
 type: view
 name: hospital_myocard_returns
-model_name: astro_model
+model_name: astro_model 
 sql_table_name: main.hospital_myocard_returns
 default_date: start_date
 
