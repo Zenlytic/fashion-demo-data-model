@@ -1,7 +1,10 @@
+dashboard-paths:
+- dashboards
+model-paths:
+- models
 name: orimi
-
 profile: demo
-
-model-paths: ['models']
-view-paths: ['views']
-dashboard-paths: ['dashboards']
+topic-paths:
+- topics
+view-paths:
+- views

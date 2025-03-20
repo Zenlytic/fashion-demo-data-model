@@ -1,0 +1,19 @@
+type: topic
+label: Hospital Myocardial Readmission Rates
+base_view: hospital_myocard_returns
+model_name: astro_model
+description: This dataset provides details about myocardial readmission rates for
+  different healthcare facilities. It includes identifying information such as facility
+  ID, name, and location, along with the measure ID and name. It offers statistical
+  data, like denominator, score, and estimates, to evaluate readmission performance
+  compared to national standards. The dataset provides a count of total and returned
+  patients, alongside comparison scores and national benchmarks, over specified reporting
+  periods.
+zoe_description: Dataset detailing myocardial readmission rates across hospitals,
+  with facility and location identifiers. It contains data on the number and proportion
+  of patients readmitted, comparing scores to national rates. Use fields like SCORE,
+  DENOMINATOR, and COMPARED_TO_NATIONAL to analyze readmission effectiveness. Supports
+  healthcare performance analysis by examining period-specific data from START_DATE_NONE
+  to END_DATE_NONE.
+hidden: false
+views: {}
